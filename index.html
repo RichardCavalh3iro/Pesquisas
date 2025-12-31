@@ -1,43 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="google-site-verification" content="WvX6Zi0u_pxe9-xHDdlxqXHpark82uP3A5w6_xDdhHY" />
+    
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Cavalheiro Assessoria | Protocolo e Assessoria em Porto Alegre</title>
+    <meta name="description" content="Serviços de assessoria imobiliária, financeira, MCMV e protocolos em cartórios de Porto Alegre. Agilidade e segurança jurídica.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a365d; 
+            --accent: #d4af37;  
+            --light: #f8fafc;
+            --dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: var(--dark); 
+            background-color: var(--light);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+
+        /* Header Profissional */
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky; top: 0; z-index: 100;
+        }
+
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; color: var(--primary); font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; }
+        .contato-topo { font-weight: bold; color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            padding: 60px 0 100px 0; 
+            text-align: center; 
+            background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%); 
+            color: white; 
+        }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.1rem; opacity: 0.9; }
+
+        /* Card de Serviços */
+        .card-servicos { 
+            background: white; 
+            padding: 40px 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            margin-top: -60px;
+            border-top: 5px solid var(--accent);
+            text-align: center;
+        }
+
+        .card-servicos h2 {
+            color: var(--primary);
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
+
+        /* Grid de Botões */
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .btn-servico {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        /* Efeito de Esmaecimento (Hover) */
+        .btn-servico:hover {
+            opacity: 0.7;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 0;
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.7rem; }
+            .nav-flex { flex-direction: column; gap: 10px; text-align: center; }
+            .grid-servicos { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-flex">
+        <div class="logo">Cavalheiro Assessoria</div>
+        <div class="contato-topo">(51) 98124-3400</div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Assessoria Documental e Jurídica</h1>
+        <p>Soluções ágeis para processos imobiliários e cartoriais em Porto Alegre.</p>
+    </div>
+</section>
+
 <main class="container">
-    <div class="card" style="margin-top: 20px; text-align: center;">
-        <h2 style="color: var(--primary); margin-bottom: 25px;">Selecione o Serviço Desejado</h2>
+    <div class="card-servicos">
+        <h2>Selecione o serviço para iniciar seu atendimento:</h2>
         
         <div class="grid-servicos">
-            <a href="obrigado.html?servico=imobiliario" class="btn-servico">Assessoria Imobiliária</a>
-            <a href="obrigado.html?servico=financeiro" class="btn-servico">Assessoria Financeira</a>
-            <a href="obrigado.html?servico=mcmv" class="btn-servico">Minha Casa Minha Vida</a>
-            <a href="obrigado.html?servico=cartorio" class="btn-servico">Serviços de Cartório</a>
+            <a href="obrigado.html?ref=imobiliario" class="btn-servico">Assessoria Imobiliária</a>
+            <a href="obrigado.html?ref=financeiro" class="btn-servico">Assessoria Financeira</a>
+            <a href="obrigado.html?ref=mcmv" class="btn-servico">Minha Casa Minha Vida</a>
+            <a href="obrigado.html?ref=cartorio" class="btn-servico">Serviços de Cartório</a>
         </div>
     </div>
 </main>
 
-<style>
-    .grid-servicos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        padding: 10px;
-    }
+<footer>
+    <div class="container">
+        <p><strong>Cavalheiro Assessoria Jurídica & Documental</strong></p>
+        <p style="font-size: 0.85rem; color: #64748b; margin-top: 10px;">Porto Alegre/RS - Especialista em regularização e protocolos.</p>
+        <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 20px;">&copy; 2025 Todos os direitos reservados.</p>
+    </div>
+</footer>
 
-    .btn-servico {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100px;
-        background: var(--primary);
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 8px;
-        transition: opacity 0.3s ease; /* Efeito de esmaecimento */
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        padding: 15px;
-    }
-
-    /* Efeito de esmaecimento ao passar o mouse */
-    .btn-servico:hover {
-        opacity: 0.7;
-        color: var(--accent);
-    }
-</style>
+</body>
+</html>
