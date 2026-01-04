@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Perguntas Frequentes | Cavalheiro Assessoria Porto Alegre</title>
+    <meta name="description" content="Tire suas dúvidas sobre prazos, documentos e custos para serviços de cartório e assessoria imobiliária em Porto Alegre.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a365d; 
+            --accent: #d4af37;  
+            --light: #f8fafc;
+            --dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: var(--dark); 
+            background-color: var(--light);
+        }
+
+        .container { width: 90%; max-width: 900px; margin: auto; }
+
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; color: var(--primary); font-size: 1.2rem; text-decoration: none; text-transform: uppercase; }
+        
+        .hero-mini { 
+            background: var(--primary); 
+            color: white; 
+            padding: 40px 0; 
+            text-align: center; 
+            margin-bottom: 40px;
+        }
+        
+        /* ESTILO DO ACORDEÃO (SEM JAVASCRIPT) */
+        details {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+            border-left: 4px solid var(--accent); /* Detalhe Dourado */
+        }
+
+        summary {
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--primary);
+            list-style: none; /* Remove a seta padrão feia */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        summary:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Criação do ícone de + e - apenas com CSS */
+        summary::after {
+            content: '+'; 
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .resposta {
+            padding: 0 20px 20px 20px;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 10px; /* Espaço entre pergunta e resposta */
+        }
+        
+        .resposta p { margin-bottom: 10px; }
+
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid var(--primary);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .btn-voltar:hover { background: var(--primary); color: white; }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-flex">
+        <a href="index.html" class="logo">Cavalheiro Assessoria</a>
+        <div style="font-weight: bold; color: var(--primary); font-size: 0.9rem;">(51) 98124-3400</div>
+    </div>
+</header>
+
+<section class="hero-mini">
+    <div class="container">
+        <h1>Dúvidas Frequentes</h1>
+        <p>Entenda como funciona nosso processo de protocolo e assessoria.</p>
+    </div>
+</section>
+
+<main class="container">
+
+    <details open> <summary>Quais cartórios de Porto Alegre vocês atendem?</summary>
+        <div class="resposta">
+            <p>Atendemos <strong>todos os cartórios</strong> de Porto Alegre e Região Metropolitana. Isso inclui:</p>
+            <ul>
+                <li>Zonas de Registro de Imóveis (1ª a 6ª Zona);</li>
+                <li>Tabelionatos de Notas e Protestos;</li>
+                <li>Registros Civis de Pessoas Naturais e Jurídicas.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details>
+        <summary>Qual é o prazo médio para o protocolo?</summary>
+        <div class="resposta">
+            <p>Nosso compromisso é com a agilidade. Para a maioria dos serviços, realizamos o protocolo em até <strong>24 horas úteis</strong> após o recebimento da documentação completa e confirmação do pagamento das custas.</p>
+            <p>O prazo de devolução do cartório depende da complexidade do ato (ex: certidões são rápidas, registros de imóveis levam mais tempo por lei).</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Vocês buscam os documentos físicos?</summary>
+        <div class="resposta">
+            <p>Sim! Oferecemos serviço de <strong>leva e traz</strong> (motoboy parceiro) para maior comodidade em Porto Alegre. Para documentos digitais, todo o processo pode ser feito online via e-mail ou WhatsApp.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Como funciona o pagamento das taxas cartoriais?</summary>
+        <div class="resposta">
+            <p>Trabalhamos com total transparência. Após a análise do pedido, enviamos a guia oficial do cartório ou o orçamento prévio.</p>
+            <p>O cliente transfere o valor exato das custas + honorários de assessoria, e nós cuidamos de todo o pagamento e trâmites burocráticos, enviando os comprovantes em seguida.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Atendem processos Minha Casa Minha Vida (MCMV)?</summary>
+        <div class="resposta">
+            <p>Sim. Somos especialistas na regularização documental para financiamentos habitacionais, incluindo o programa MCMV, garantindo que a documentação esteja correta para aprovação bancária.</p>
+        </div>
+    </details>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <a href="index.html" class="btn-voltar">← Voltar para Página Inicial</a>
+    </div>
+
+</main>
+
+<footer style="padding: 20px 0; text-align: center; background: #fff; border-top: 1px solid #e2e8f0; font-size: 0.8rem; color: #64748b;">
+    <div class="container">
+        &copy; 2025 Cavalheiro Assessoria - Porto Alegre/RS
+    </div>
+</footer>
+
+</body>
+</html>
