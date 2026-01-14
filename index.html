@@ -1,161 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="google-site-verification" content="WvX6Zi0u_pxe9-xHDdlxqXHpark82uP3A5w6_xDdhHY" />
-    
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <title>Cavalheiro Assessoria | Protocolo e Assessoria em Porto Alegre</title>
-    <meta name="description" content="Solução para evitar impugnações e imprevistos no processo regulatório de documentos, como serviços de registro e tabelionatos.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    
+    <title>Bit Sound Machine</title>
     <style>
-        :root {
-            --primary: #1a365d; 
-            --accent: #d4af37;  
-            --light: #f8fafc;
-            --dark: #1e293b;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Estilo Simples e Objetivo */
+        body { font-family: monospace; background: #121212; color: #00ff00; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .grid { display: grid; grid-template-columns: repeat(4, 100px); gap: 15px; margin-top: 20px; }
         
-        body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.6; 
-            color: var(--dark); 
-            background-color: var(--light);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+        .pad {
+            width: 100px; height: 100px; border: 2px solid #00ff00;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-weight: bold; transition: 0.2s;
         }
 
-        .container { width: 90%; max-width: 1100px; margin: auto; }
-
-        /* Header Profissional */
-        header {
-            background: #fff;
-            padding: 20px 0;
-            border-bottom: 2px solid #e2e8f0;
-            position: sticky; top: 0; z-index: 100;
-        }
-
-        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 700; color: var(--primary); font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px; }
-        .contato-topo { font-weight: bold; color: var(--primary); }
-
-        /* Hero Section */
-        .hero { 
-            padding: 60px 0 100px 0; 
-            text-align: center; 
-            background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%); 
-            color: white; 
-        }
-        .hero h1 { font-size: 2.2rem; margin-bottom: 15px; }
-        .hero p { font-size: 1.1rem; opacity: 0.9; }
-
-        /* Card de Serviços */
-        .card-servicos { 
-            background: white; 
-            padding: 40px 30px; 
-            border-radius: 8px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-            margin-top: -60px;
-            border-top: 5px solid var(--accent);
-            text-align: center;
-        }
-
-        .card-servicos h2 {
-            color: var(--primary);
-            margin-bottom: 30px;
-            font-size: 1.5rem;
-        }
-
-        /* Grid de Botões */
-        .grid-servicos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .btn-servico {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 120px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: opacity 0.3s ease;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            padding: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
-        }
-
-        /* Efeito de Esmaecimento (Hover) */
-        .btn-servico:hover {
-            opacity: 0.7;
-            color: var(--accent);
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 40px 0;
-            text-align: center;
-            background: #fff;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.7rem; }
-            .nav-flex { flex-direction: column; gap: 10px; text-align: center; }
-            .grid-servicos { grid-template-columns: 1fr; }
-        }
+        /* Classe para quando o botão está "Ligado" */
+        .pad.active { background: #00ff00; color: #121212; box-shadow: 0 0 15px #00ff00; }
+        
+        .controls { margin-bottom: 20px; text-align: center; }
+        .status { margin-top: 20px; font-size: 0.9em; color: #888; }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="container nav-flex">
-        <div class="logo">Cavalheiro Assessoria</div>
+    <div class="controls">
+        <h1>BIT SOUND BOX</h1>
+        <p>Clique para Ativar/Desativar | Use o Teclado para Tocar</p>
     </div>
-</header>
 
-<section class="hero">
-    <div class="container">
-        <h1>Protocolo de documentos</h1>
-        </div>
-</section>
-
-<main class="container">
-    <div class="card-servicos">
-        <h2>Selecione o serviço para iniciar seu atendimento:</h2>
-        
-        <div class="grid-servicos">
-            <a href="obrigado.html?ref=imobiliario" class="btn-servico">Registro de Imóveis</a>
-            <a href="obrigado.html?ref=financeiro" class="btn-servico">Tabelionato de Notas</a>
-            <a href="obrigado.html?ref=mcmv" class="btn-servico">Registro Civil</a>
-            <a href="obrigado.html?ref=cartorio" class="btn-servico">Financiamento - Minha Casa Minha Vida</a>
-        </div>
+    <div class="grid">
+        <div class="pad" data-key="a" data-freq="261.63">A</div>
+        <div class="pad" data-key="s" data-freq="293.66">S</div>
+        <div class="pad" data-key="d" data-freq="329.63">D</div>
+        <div class="pad" data-key="f" data-freq="349.23">F</div>
     </div>
-</main>
 
-<footer>
-    <div class="container">
-        <nav>
-            <a href="index.html">Início</a> | 
-            <a href="institucional.html">Sobre Nós</a> | 
-            <a href="faq.html">Dúvidas</a>
-        </nav>
-        <p style="margin-top: 15px;">&copy; 2025 Cavalheiro Assessoria</p>
-    </div>
-</footer>
+    <p class="status">Modo: Musical (Teclado Ativo)</p>
 
+    <script>
+        // 1. Configuração do Áudio (Web Audio API)
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playBitSound(frequency) {
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.type = 'square'; // Som tipo "bit" (quadrado)
+            oscillator.frequency.setValueAtTime(frequency, audioCtx.currentTime);
+            
+            gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            oscillator.start();
+            oscillator.stop(audioCtx.currentTime + 0.5);
+        }
+
+        // 2. Interação com Rato (Liga/Desliga)
+        const pads = document.querySelectorAll('.pad');
+        pads.forEach(pad => {
+            pad.addEventListener('click', () => {
+                pad.classList.toggle('active');
+                if(pad.classList.contains('active')) {
+                    playBitSound(parseFloat(pad.dataset.freq));
+                }
+            });
+        });
+
+        // 3. Interação com Teclado
+        window.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase();
+            pads.forEach(pad => {
+                // Só toca se a tecla coincidir E o botão estiver "LIGADO" (active)
+                if (pad.dataset.key === key && pad.classList.contains('active')) {
+                    playBitSound(parseFloat(pad.dataset.freq));
+                    
+                    // Efeito visual rápido ao tocar
+                    pad.style.transform = "scale(1.1)";
+                    setTimeout(() => pad.style.transform = "scale(1)", 100);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
